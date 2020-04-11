@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Match Information Form</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Tushar Faroque">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="text/css" href="icons/ball.ico">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+	</head>
+	<body>
+		<div class="h2div">
+			<h2 class="h2">Match Information Form</h2>
+		</div>
+		<form action="signup5.php" method="post">
+			<div class="container2">
+				Event id:
+				<input class="mini" type="text" name="eid">
+				Venue Id:
+				<input class="mini" type="text" name="vid">
+				Date of the Match:
+				<input class="mini" type="text" name="dom">(DD-MM-YYYY)<br><br>
+				<table>
+					<tr>
+						<th>Match id</th>
+						<th>Man-of-the-match</th>
+						<th>Umpires</th>
+					</tr>
+					<tr>
+						<!-- 1st Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="mid"></input></td>
+						<td><input class="mini2" type="text" name="motm"></input></td>
+						<td><input class="mini2" type="text" name="umpires"></input></td>
+					</tr>
+					<tr>
+						<!-- 2nd Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="mid2"></input></td>
+						<td><input class="mini2" type="text" name="motm2"></input></td>
+						<td><input class="mini2" type="text" name="umpires2"></input></td>
+					</tr>
+					<tr>
+						<!-- 3rd Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="mid3"></input></td>
+						<td><input class="mini2" type="text" name="motm3"></input></td>
+						<td><input class="mini2" type="text" name="umpires3"></input></td>
+					</tr>
+				</table><br><br>
+				<input class="btn" type="submit" name="submit" value="Submit"><br>
+			</div>
+		</form>
+		<div class="container2">
+			<form action="retrieve5.php" method="post">
+				<input class="btn" type="submit" name="view" value="View Data"><br>
+			</form>
+		</div>
+	</body>
+</html>

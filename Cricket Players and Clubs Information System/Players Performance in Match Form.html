@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Players Performance in Match Form</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Tushar Faroque">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="text/css" href="icons/ball.ico">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+	</head>
+	<body>
+		<div class="h2div">
+			<h2 class="h2">Players Performance in Match Form</h2>
+		</div>
+		<form action="signup4.php" method="post">
+			<div class="container2">
+				Match id:
+				<input class="mini" type="text" name="mid">
+				Venue Id:
+				<input class="mini" type="text" name="vid">
+				Date of the Match:
+				<input class="mini" type="text" name="dom">(DD-MM-YYYY)<br><br>
+				<table>
+					<tr>
+						<th>Player ID</th>
+						<th>Total Wickets</th>
+						<th>Total Runs</th>
+						<th>Outstanding Performance</th>
+					</tr>
+					<tr>
+						<!-- 1st Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="pid"></input></td>
+						<td><input class="mini2" type="text" name="tw"></input></td>
+						<td><input class="mini2" type="text" name="tr"></input></td>
+						<td><input class="mini2" type="text" name="op"></input></td>
+					</tr>
+					<tr>
+						<!-- 2nd Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="pid2"></input></td>
+						<td><input class="mini2" type="text" name="tw2"></input></td>
+						<td><input class="mini2" type="text" name="tr2"></input></td>
+						<td><input class="mini2" type="text" name="op2"></input></td>
+					</tr>
+					<tr>
+						<!-- 3rd Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="pid3"></input></td>
+						<td><input class="mini2" type="text" name="tw3"></input></td>
+						<td><input class="mini2" type="text" name="tr3"></input></td>
+						<td><input class="mini2" type="text" name="op3"></input></td>
+					</tr>
+				</table><br><br>
+				<input class="btn" type="submit" name="submit" value="Submit"><br>
+			</div>
+		</form>
+		<div class="container2">
+			<form action="retrieve4.php" method="post">
+				<input class="btn" type="submit" name="view" value="View Data"><br>
+			</form>
+		</div>
+	</body>
+</html>

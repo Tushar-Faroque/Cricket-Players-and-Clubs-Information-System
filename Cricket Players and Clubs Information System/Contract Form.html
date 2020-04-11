@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contract Form</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Tushar Faroque">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="text/css" href="icons/ball.ico">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+	</head>
+	<body>
+		<div class="h2div">
+			<h2 class="h2">Contract Form</h2>
+		</div>
+		<form action="signup2.php" method="post">
+			<div class="container2">
+				Club Id:
+				<input class="mini" type="text" name="cid">
+				Club Name:
+				<input class="mini" type="text" name="cname"><br><br>
+				First Party<br>
+				Name of the Player<br>
+				First Name:
+				<input class="mini" type="text" name="fname">
+				Middle Name:
+				<input class="mini" type="text" name="mname">
+				Last Name:
+				<input class="mini" type="text" name="lname"><br><br>
+				Player Id:
+				<input class="mini" type="text" name="pid"><br><br>
+				Second Party<br>
+				Authorized Person<br>
+				First Name:
+				<input class="mini" type="text" name="fname2">
+				Middle Name:
+				<input class="mini" type="text" name="mname2">
+				Last Name:
+				<input class="mini" type="text" name="lname2"><br><br>
+				Designation:
+				<input class="mini" type="text" name="designation"><br><br>
+				Contract Period<br>
+				Start Date
+				<input class="mini" type="text" name="sdate">(DD-MM-YYYY)
+				End Date
+				<input class="mini" type="text" name="edate">(DD-MM-YYYY)<br><br>
+				Contract Amount:
+				<input class="mini" type="text" name="camount"><br><br>
+				<h2>Payment Schedule</h2>
+				<table>
+					<tr>
+						<th>Serial Number</th>
+						<th>Due Date</th>
+						<th>Payment Date</th>
+						<th>Amount</th>
+					</tr>
+					<tr>
+						<!-- 1st Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="snumber"></input></td>
+						<td><input class="mini2" type="text" name="ddate"></input></td>
+						<td><input class="mini2" type="text" name="pdate"></input></td>
+						<td><input class="mini2" type="text" name="amount"></input></td>
+					</tr>
+					<tr>
+						<!-- 2nd Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="snumber2"></input></td>
+						<td><input class="mini2" type="text" name="ddate2"></input></td>
+						<td><input class="mini2" type="text" name="pdate2"></input></td>
+						<td><input class="mini2" type="text" name="amount2"></input></td>
+					</tr>
+				</table><br><br>
+				Contract witness 1:
+				<input class="mini" type="text" name="cwitness1"><br><br>
+				Contract witness 2:
+				<input class="mini" type="text" name="cwitness2"><br><br>
+				<input class="btn" type="submit" name="submit" value="Submit"><br>
+			</div>
+		</form>
+		<div class="container2">
+			<form action="retrieve2.php" method="post">
+				<input class="btn" type="submit" name="view" value="View Data"><br>
+			</form>
+		</div>
+	</body>
+</html>

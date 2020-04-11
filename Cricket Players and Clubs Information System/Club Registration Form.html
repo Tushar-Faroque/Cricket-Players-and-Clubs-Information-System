@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Club Registration Form</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Tushar Faroque">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="text/css" href="icons/ball.ico">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+	</head>
+	<body>
+		<div class="h2div">
+			<h2 class="h2">Club Registration Form</h2>
+		</div>
+		<form action="signup3.php" method="post">
+			<div class="container">
+				Name of the club
+				<input type="text" name="cname"><br><br>
+				Date of Establishment
+				<input type="text" name="doe">(DD-MM-YYYY)<br><br>
+				Address<br><br>
+				House No.
+				<input class="mini" type="text" name="houseNo">
+				Location
+				<input class="mini" type="text" name="location">
+				Village/Street
+				<input class="mini" type="text" name="street"><br><br>
+				Thana
+				<input class="mini" type="text" name="thana">
+				District
+				<input class="mini" type="text" name="district">
+				Post code
+				<input class="mini" type="text" name="postcode"><br><br>
+				Name of the President
+				<input type="text" name="president"><br><br>
+				<input type="submit" class="btn" name="submit" value="Submit">
+			</div>
+		</form>
+		<div class="container2">
+			<form action="retrieve3.php" method="post">
+				<input class="btn" type="submit" name="view" value="View Data"><br>
+			</form>
+		</div>
+	</body>
+</html>

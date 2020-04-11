@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Team Information Form</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Tushar Faroque">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="text/css" href="icons/ball.ico">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+	</head>
+	<body>
+		<div class="h2div">
+			<h2 class="h2">Team Information Form</h2>
+		</div>
+		<form action="signup6.php" method="post">
+			<div class="container">
+				Club ID:
+				<input class="mini" type="text" name="cid">
+				Player ID:
+				<input class="mini" type="text" name="pid"><br><br>
+				Team Formation Date:
+				<input type="text" name="tfd">(DD-MM-YYYY)<br><br>
+				Event Name/Event ID:
+				<input type="text" name="eid"><br><br>
+				Team Leader ID(Player ID):
+				<input class="mini" type="text" name="tdid">
+				Player name:
+				<input class="mini" type="text" name="tdname"><br><br>
+				Coach ID:
+				<input class="mini" type="text" name="coachid">
+				Coach Name:
+				<input class="mini" type="text" name="coachname"><br><br>
+				<table>
+					<tr>
+						<th>Player ID</th>
+						<th>Name</th>
+					</tr>
+					<tr>
+						<!-- 1st Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="pid1"></input></td>
+						<td><input class="mini2" type="text" name="n1"></input></td>
+					</tr>
+					<tr>
+						<!-- 2nd Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="pid2"></input></td>
+						<td><input class="mini2" type="text" name="n2"></input></td>
+					</tr>
+					<tr>
+						<!-- 3rd Row & # of columns 4 -->
+						<td><input class="mini2" type="text" name="pid3"></input></td>
+						<td><input class="mini2" type="text" name="n3"></input></td>
+					</tr>
+				</table><br><br>
+				<input class="btn" type="submit" name="submit" value="Submit"><br>
+			</div>
+		</form>
+		<div class="container2">
+			<form action="retrieve6.php" method="post">
+				<input class="btn" type="submit" name="view" value="View Data"><br>
+			</form>
+		</div>
+	</body>
+</html>
